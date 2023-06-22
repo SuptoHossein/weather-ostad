@@ -18,9 +18,7 @@ async function getWeather() {
     const year = date.getFullYear();
     const month = date.getMonth() + 1;
     const day = date.getDate();
-    document.querySelector(
-      ".date"
-    ).innerHTML = `Today is: <b>${day}/${month}/${year}</b>`;
+    document.querySelector(".date").innerHTML = `Today is: <b>${day}/${month}/${year}</b>`;
     document.querySelector(".location").innerHTML = `Location is: <b>${data.name}</b>`;
     document.querySelector(".humidity").innerHTML = `Humidity: <b>${data.main.humidity}%</b>`;
   }
