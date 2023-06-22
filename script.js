@@ -11,7 +11,7 @@ async function getWeather() {
     // fetch api
     const response = await fetch(`${base_url}units=metric&q=${currentLocation}&appid=${key}`);
     const data = await response.json();
-    console.log(data);
+    
     document.querySelector(".tempareture").innerHTML = Math.round(data.main.temp) + `°c`;
 
     const date = new Date();
